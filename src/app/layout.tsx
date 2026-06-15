@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import Script from "next/script"
 import {
   bebasNeue,
   spaceMono,
@@ -48,6 +49,11 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${fontVariables} h-full antialiased`}>
       <body className="min-h-full flex flex-col">{children}</body>
+      <Script
+        src="https://cloud.umami.is/script.js"
+        data-website-id="b9496f96-1be5-43a0-a93e-a2a924a2be5b"
+        strategy="afterInteractive"
+      />
     </html>
   )
 }
