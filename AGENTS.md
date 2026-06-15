@@ -36,13 +36,14 @@ If there are libraries that do the exact or similar thing to what to user asks f
 
 **Core**
 
-- Next.js `^16.2.6` (App Router, Turbopack, React Compiler)
-- React + React DOM `19.2.3` (pinned)
-- TypeScript `^5.9.2`
+- Next.js `16.2.9` (App Router, Turbopack, React Compiler)
+- React + React DOM `19.2.4` (pinned)
+- TypeScript `^5`
 - ESLint `^9` with `eslint-config-next` (flat config, `core-web-vitals`)
 
 - Tailwind CSS **v4** via `@tailwindcss/postcss` (no `tailwind.config` - config lives in CSS)
-- shadcn/ui `^4.8.2` (style: `radix-nova`, components in `components/ui/`) built on `radix-ui`
+- shadcn/ui `^4.11.0` (style: `radix-nova`, components in `components/ui/`) built on `radix-ui`
+- `lucide-react` `^1.18.0` for icons
 
 - `react-hook-form` `^7.56`
 - `zod` `^4.1` for schemas (resolver wired in `@/lib/resolver`)
@@ -51,6 +52,7 @@ If there are libraries that do the exact or similar thing to what to user asks f
 - Supabase: `@supabase/ssr` `^0.9` + `@supabase/supabase-js` `^2.98`
 
 - `sonner` for toasts
+- `next-intl` for i18n (EN/DE, browser language detection with EN fallback)
 
 ## Critical Development Rules
 
