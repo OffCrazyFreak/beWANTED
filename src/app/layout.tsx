@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -21,6 +22,11 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${geistSans.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col">{children}</body>
+      <Script
+        src="https://cloud.umami.is/script.js"
+        data-website-id="b9496f96-1be5-43a0-a93e-a2a924a2be5b"
+        strategy="afterInteractive"
+      />
     </html>
   );
 }
